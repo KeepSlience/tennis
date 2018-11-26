@@ -1,0 +1,62 @@
+div.img {
+	overflow:hidden;
+	background-color:#EEE5DE;
+}
+
+div.img img {
+    width: 100%;
+    height: auto;
+}
+
+.image{
+	float: left;
+	margin:5px;
+	width:232.5px;
+}
+.image-nohover{
+	float: left;
+	margin:5px;
+	width:232.5px;
+}
+
+.image:hover >.responsive{
+	margin-left:-100%;
+}
+
+div.desc {
+    padding: 5px;
+    text-align: center;
+}
+
+div.desc p{
+	margin:0;
+	padding:0;
+    line-height:20px;
+}
+
+.responsive {
+	position:relative;
+	transition:margin-left 1s;
+    padding:0;
+    width: 100%;
+	z-index:1;
+}
+
+@media only screen and (max-width: 700px){
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}

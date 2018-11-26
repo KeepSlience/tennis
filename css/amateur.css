@@ -1,0 +1,86 @@
+.background{
+	position:relative;
+	margin-bottom:5px;
+	margin-top:5px;
+	overflow:hidden;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2)
+}
+.table{
+	width:100%;
+	height:100px;
+}
+.table-line{
+	position:relative;
+	text-align:center;
+	border-style:solid; 
+	border-width:thin;
+	transition:margin-top 1s;
+	background-color:#EEE5DE;
+	border-color:#B03060;
+	z-index:1;
+}
+.table-line:hover .content-activity img{
+	margin-top:-100px;
+}
+.table-line p{
+	font-size:12px;
+	line-height:10px;
+}
+[title=title]{
+	padding-top:24px;
+}
+[title=title] p{
+	margin-left:30px;
+	margin-right:30px;
+	font-size:24px;
+	display:inline;
+}
+[title=information]{
+	position:absolute;
+	top:10px;
+	width:100%;
+	margin:auto;
+}
+[title=information] h3{
+	text-align:center;
+	font-size:18px;
+	color:white;
+}
+[title=information] h4{
+	text-align:center;
+	font-size:12px;
+	font-style:italic;
+	color:white;
+	cursor:pointer;
+}
+.activity{
+	width:60%;
+}
+.left-img{
+	position:absolute;
+	left:150px;
+	width:100px;
+	height:100px;
+}
+.right-img{
+	position:absolute;
+	right:150px;
+	width:100px;
+	height:100px;
+}
+.content-activity{
+	overflow:hidden;
+	width:380px;
+	height:415px;
+	margin-right:15px;
+	top:68px;
+	position:absolute;
+	right:0;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2)
+}
+.content-activity img{
+	transition:margin-top 1s;
+	width:380px;
+	height:415px;
+	position:absolute;	
+}
