@@ -11,7 +11,7 @@
         this.lastPosterItem = this.posterItems.last();
         this.prevBtn = this.caroursel.find(".poster-next-btn");
         this.nextBtn = this.caroursel.find(".poster-prev-btn");
-        //Ä¬ÈÏ²ÎÊý
+        //Ä¬ï¿½Ï²ï¿½ï¿½ï¿½
         this.setting = {
             "width":"1000",
             "height":"270",
@@ -22,13 +22,13 @@
             "isAutoplay":"true",
             "dealy":"1000"
         }
-        //×Ô¶¨Òå²ÎÊýÓëÄ¬ÈÏ²ÎÊýºÏ²¢
+        //ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¬ï¿½Ï²ï¿½ï¿½ï¿½ï¿½Ï²ï¿½
         $.extend(this.setting,this.getSetting())
-        //ÉèÖÃµÚÒ»Ö¡Î»ÖÃ
+        //ï¿½ï¿½ï¿½Ãµï¿½Ò»Ö¡Î»ï¿½ï¿½
         this.setFirstPosition();
-        //ÉèÖÃÊ£ÓàÖ¡µÄÎ»ÖÃ
+        //ï¿½ï¿½ï¿½ï¿½Ê£ï¿½ï¿½Ö¡ï¿½ï¿½Î»ï¿½ï¿½
         this.setSlicePosition();
-        //Ðý×ª
+        //ï¿½ï¿½×ª
         this.rotateFlag = true;
         this.prevBtn.bind("click",function(){
             if(self.rotateFlag){
@@ -57,7 +57,7 @@
         rotateAnimate:function(type){
             var that = this;
             var zIndexArr = [];
-            if(type == "left"){//Ïò×óÒÆ¶¯
+            if(type == "left"){//ï¿½ï¿½ï¿½ï¿½ï¿½Æ¶ï¿½
                 this.posterItems.each(function(){
                    var self = $(this),
                     prev = $(this).next().get(0)?$(this).next():that.firstPosterItem,
@@ -82,7 +82,7 @@
                     $(this).css("zIndex",zIndexArr[i]);
                 });
             }
-            if(type == "right"){//ÏòÓÒÒÆ¶¯
+            if(type == "right"){//ï¿½ï¿½ï¿½ï¿½ï¿½Æ¶ï¿½
                 this.posterItems.each(function(){
                     var self = $(this),
                     next = $(this).prev().get(0)?$(this).prev():that.lastPosterItem,
@@ -112,7 +112,7 @@
             this.caroursel.css({"width":this.setting.width,"height":this.setting.height});
             this.posterList.css({"width":this.setting.width,"height":this.setting.height});
             var width = (this.setting.width - this.setting.posterWidth) / 2;
-            //ÉèÖÃÁ½¸ö°´Å¥µÄÑùÊ½
+            //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å¥ï¿½ï¿½ï¿½ï¿½Ê½
             this.prevBtn.css({"width":width , "height":this.setting.height,"zIndex":Math.ceil(this.posterItems.size()/2)});
             this.nextBtn.css({"width":width , "height":this.setting.height,"zIndex":Math.ceil(this.posterItems.size()/2)});
             this.firstPosterItem.css({
@@ -134,7 +134,7 @@
                 Btnwidth = (this.setting.width - this.setting.posterWidth) / 2,
                 gap = Btnwidth/level,
                 containerWidth = this.setting.width;
-            //ÉèÖÃ×ó±ßÖ¡µÄÎ»ÖÃ
+            //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¡ï¿½ï¿½Î»ï¿½ï¿½
             var i = 1;
             var leftWidth = posterWidth;
             var leftHeight = posterHeight;
@@ -152,7 +152,7 @@
                 });
                 i++;
             });
-            //ÉèÖÃÓÒÃæÖ¡µÄÎ»ÖÃ
+            //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¡ï¿½ï¿½Î»ï¿½ï¿½
             var j = level;
             var zLoop2 = 1;
             var rightWidth = posterWidth;

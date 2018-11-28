@@ -2,9 +2,10 @@
     box-sizing: border-box;
 }
 body {
-	background-color:#8B2252;
 	margin: 0;
-    padding: 0;
+	padding: 0;
+	font-family:KaiTi;
+	background:  rgb(144, 204, 186);	
 }
 #head {
 	position:relative;
@@ -12,27 +13,27 @@ body {
 	margin: auto;
 	width:1000px;
 	overflow: hidden;
-	background-color:#8B2252;
+	background-color:rgb(67, 145, 175);
 }
 #name {
 	position:relative;
 	display:inline;
 }
-.information{
+
+#address{
+	bottom:10px;
 	display:inline;
 	position:absolute;
 	right:0;
 }
-#weibo a{
-	color: white;
-    text-decoration: none;
-}
-#address{
-	bottom:40px;
-}
+
 #school{
-	bottom:80px;
+	bottom:40px;
+	display:inline;
+	position:absolute;
+	right:0;
 }
+
 #school p{
 	display:inline;
 	color: white;
@@ -45,34 +46,33 @@ body {
     text-decoration: none;
 	padding-left:20px;
 }
-#name h1,h2 {
+
+#name h2 {
+	left:-7px;
+	bottom:10px;
 	color:white;
 	display:inline;
 	position:relative;
 }
-#name h1 {
-	font-size:36px;
-	bottom:70px;
-}
-#name h2 {
-	left:-76px;
-	bottom:10px;
-}
+
 #navigation-div{
 	margin: auto;
 	padding: 0;
     width: 1000px;
 }
+
 #navigation {
 	margin: auto;
 	list-style-type: none;
-	background-color:#B03060;
+	background-color:rgb(67, 145, 175);
     margin: 0;
     padding: 0;
 }
+
 .active {
-    background-color: #B22222;
+    background-color: rgb(67, 145, 175);
 }
+
 .dropbtn {
     color: white;
     padding: 21px;
@@ -82,7 +82,9 @@ body {
 }
 .dropdown {
     position: relative;
-    display: inline-block;
+	display: inline-block;
+	padding-left: 80px;
+	padding-right: 80px;
 }
 
 .dropdown-content {
@@ -109,14 +111,14 @@ body {
     display: block;
 }
 .dropdown:hover .dropbtn {
-    background-color: #B22222;
+    background-color: rgb(9, 221, 157);
 }
 #right-dropdown{
 	display:inline-block;
 	float:right;
 }
 #right-dropdown:hover{
-	background-color: #B22222;
+	background-color:rgb(9, 221, 157);
 }
 .content{
 	overflow:hidden;
@@ -130,7 +132,7 @@ body {
 	position:relative;
 	margin: auto;
 	width:1000px;
-	background-color:#8B2252;
+	background-color:rgb(9, 221, 157);
 }
 .about p{
 	display:inline;
@@ -143,7 +145,7 @@ body {
 	padding:15px;
 	padding-bottom:20px;
 	width:1000px;
-	background-color:#B03060;
+	background-color:rgb(67, 145, 175);
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2)
 }
 .content-arrange h3{
@@ -158,7 +160,7 @@ body {
 	position:absolute;
 	top:60px;
 	left:300px;
-	list-style-type:circle;
+	list-style-type:square;
 	padding-left:20px;
 }
 [title=history] li{
@@ -171,3 +173,20 @@ body {
 	right:8vw;
 	bottom:30px;
 }
+.content-arrange p {
+	color:black;
+	padding-left:375px; 
+	font-size: 20px;
+}
+
+#about div{
+	margin: 0;
+	width:100%;
+	height: 40px;
+	display: inline-block;
+	text-align: center;
+	padding-top: 10px;
+	background: rgba(138, 55, 163, 0.808);
+}
+ 
+
