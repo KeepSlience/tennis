@@ -2,3 +2,20 @@
 	margin: auto;
 	background-color:white;
 }
+html{
+	font-size: 10px;
+}
+table{
+	border:2rem;
+}
+table img{
+	width:30rem;
+	height:30rem ;
+}
+h4{
+	text-align: center;
+	font-size: 2em;
+}
+h4:hover{
+	color: blue;
+}
